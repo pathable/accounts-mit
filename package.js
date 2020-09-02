@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Login service for Mit accounts',
-  version: '1.0.1',
+  version: '1.0.2',
   name: 'pathable:accounts-mit',
   git: 'https://github.com/pathable/accounts-mit',
 });
@@ -13,7 +13,7 @@ Package.onUse(api => {
   // Export Accounts (etc) to packages using this one.
   api.imply('accounts-base', ['client', 'server']);
 
-  api.use('pathable:accounts-oauth@1.3.1', ['client', 'server']);
+  api.use('pathable:accounts-oauth@1.3.3', ['client', 'server']);
   api.use('pathable:mit-oauth@1.0.0');
   api.imply('pathable:mit-oauth');
 
